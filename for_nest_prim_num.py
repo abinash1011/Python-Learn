@@ -1,5 +1,5 @@
-lower = int(input("enter your lower limit: "))
-upper = int(input("enter your upper limit: "))
+lower = int(input("enterYour lower limit: "))
+upper = int(input("enterYour upper limit: "))
 if lower % 2 == 0:
     lower += 1
 if lower == 1:
