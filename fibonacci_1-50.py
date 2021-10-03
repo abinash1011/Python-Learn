@@ -1,6 +1,14 @@
-n1 = 0
-n2 = 1
-while n2 < 50:
-    print(n2)
-    n1 = n2
-    n2 = n1 + n2
+x = 0
+y = 1
+
+print(x)
+print(y)
+
+for i in range(7):
+    z = x + y
+    x = y
+    y = z
+    print(z)
+
+    
+    
