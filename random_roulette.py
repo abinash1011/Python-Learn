@@ -26,9 +26,9 @@ def get_roulette(roulette):
     - let the relative weight of 5 elements are [5,10,20,30,35]
     - then there cum_weight will be [5,15,35,65,100]
     """
-    result = random.choices(roulette, weights=[18, 18, 2], k=5)
+    result = random.choices(roulette, weights=[18, 18, 2, 12], k=5)
     print(result)
 
 
-colors = ["Red", "Black", "Green"]
+colors = ["Red", "Black", "Green", "Magenta"]
 get_roulette(colors)
