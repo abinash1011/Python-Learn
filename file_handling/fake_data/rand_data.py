@@ -8,19 +8,19 @@ Modified By: Abinash1011
 '''
 import random
 
-name = open("file_handling/Indian_Names.txt", "r")
+name = open("file_handling/fake_data/Indian_Names.txt", "r")
 list_names = []
 for line in name:
     split_lines = line.split()
     list_names.append(split_lines[0])
 
-states = open("file_handling/states.txt", "r")
+states = open("file_handling/fake_data/states.txt", "r")
 list_states = []
 for state in states:
     split_state = state.split()
     list_states.append(split_state[0])
 
-cities = open("file_handling/city.txt", "r")
+cities = open("file_handling/fake_data/city.txt", "r")
 list_cities = []
 for city in cities:
     split_city = city.split()
@@ -38,5 +38,5 @@ for i in range(100):
     zip_code = random.randint(1000000, 9999999)
     address = str(plot) + ", St." + fcity + ", " + fstate
     mail = first_name.lower() + last_name.lower() + '@' + random.choice(mail_list) + ".com"
-    x = open("file_handling/Fake_data.txt", "a")
-    x.write(f"\n{first_name} {last_name}\n{phone}\n{address}\n{zip_code}")
+    x = open("file_handling/fake_data/Fake_data.txt", "a")
+    x.write(f"\n{first_name} {last_name}\n{phone}\n{address}\n{zip_code}\n")
