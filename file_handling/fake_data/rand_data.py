@@ -40,3 +40,6 @@ for i in range(100):
     mail = first_name.lower() + last_name.lower() + '@' + random.choice(mail_list) + ".com"
     x = open("file_handling/fake_data/Fake_data.txt", "a")
     x.write(f"\n{first_name} {last_name}\n{phone}\n{address}\n{zip_code}\n")
+name.close()
+states.close()
+cities.close()
