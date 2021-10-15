@@ -7,23 +7,31 @@ Modified By: Abinash1011
 -----
 '''
 class Employee:
-    def __init__(self, Id, name):
-        self.Id = Id
+    """
+    Employee class
+    """
+    def __init__(self, id_no, name):
+        self.id_no = id_no
         self.name = name
 
     def display(self):
-        print(f'ID = {self.Id}\nName = {self.name}')
+        """
+        display
+        """
+        print(f'id_no = {self.id_no}\nName = {self.name}')
 
-emp1 = Employee(1, "coder")
-emp1.display()
-del emp1.Id
-try:
-    print(emp1.Id)
-except AttributeError:
-    print("emp1.Id is not defined")
 
-del emp1
-try:
+if __name__ == "__main__":
+    emp1 = Employee(1, "coder")
     emp1.display()
-except NameError:
-    print("emp1 is not defined")
+    del emp1.id_no
+    try:
+        print(emp1.id_no)
+    except AttributeError:
+        print("emp1.id_no is not defined")
+
+    del emp1
+    try:
+        emp1.display()
+    except NameError:
+        print("emp1 is not defined")
